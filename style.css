@@ -1,0 +1,119 @@
+* {
+  font-family: "Mulish", sans-serif;
+  padding: 0;
+  margin: 0px;
+}
+
+/* shared styles  */
+
+:root {
+  --primary-color: #ff5400;
+}
+
+/* shared styles  */
+
+/* header section started  */
+
+header {
+  padding: 0px 135px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 53px 0px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  color: #131318;
+  font-size: 2.25rem;
+  font-weight: 800;
+  gap: 16px;
+}
+
+.nav-title {
+  color: var(--primary-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 48px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #424247;
+  text-align: center;
+  font-size: 1.12rem;
+  font-weight: 400;
+}
+
+/* nav section done  */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  row-gap: 24px;
+  background: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("/Images/Group\ 13\ \(1\)\ \(1\).png");
+  width: 1170px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.banner h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 800;
+}
+.banner p {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  width: 676px;
+}
+
+.banner-input-area {
+  display: flex;
+  gap: 24px;
+  padding: 16px 16px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.input-text-area {
+  padding: 16px 15px;
+  border-radius: 8px;
+  border-style: none;
+  outline: none;
+}
+
+.btn-primary {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--primary-color);
+  padding: 16px 34px;
+  border-radius: 8px;
+  border-style: none;
+}
+
+#icons-btn {
+  margin-right: 8px;
+}
