@@ -8,6 +8,7 @@
 
 :root {
   --primary-color: #ff5400;
+  --base-text-size: 1rem;
 }
 
 /* shared styles  */
@@ -57,6 +58,8 @@ nav ul a {
 
 /* nav section done  */
 
+/* banner section styles  */
+
 .banner {
   display: flex;
   flex-direction: column;
@@ -83,7 +86,7 @@ nav ul a {
 .banner p {
   color: #fff;
   text-align: center;
-  font-size: 16px;
+  font-size: var(--base-text-size);
   font-weight: 400;
   width: 676px;
 }
@@ -96,17 +99,32 @@ nav ul a {
   background: rgba(255, 255, 255, 0.3);
 }
 
+.input-field {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
 .input-text-area {
-  padding: 16px 15px;
-  border-radius: 8px;
+  padding: 16px 0px 16px 16px;
+  border-style: none;
+  border-radius: 8px 0px 0px 8px;
+
+  outline: none;
+}
+
+.input-icons {
+  padding: 16px 16px 16px 0px;
+  background-color: #fff;
   border-style: none;
   outline: none;
+  border-radius: 0px 8px 8px 0px;
 }
 
 .btn-primary {
   color: #fff;
   text-align: center;
-  font-size: 16px;
+  font-size: var(--base-text-size);
   font-weight: 700;
   background-color: var(--primary-color);
   padding: 16px 34px;
@@ -116,4 +134,73 @@ nav ul a {
 
 #icons-btn {
   margin-right: 8px;
+}
+
+/* mobile responsive  */
+
+@media screen and (max-width: 600px) {
+  /* header section  */
+
+  header {
+    padding: 0px 20px;
+  }
+
+  /* nav section  */
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 17px;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 10px;
+  }
+
+  /* banner section  */
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        180deg,
+        rgba(19, 19, 24, 0.8) 0%,
+        rgba(19, 19, 24, 0) 100%
+      ),
+      url("./Images/Group\ 13\ \(1\)\ \(1\).png");
+    background-size: auto;
+    background-position: center;
+    width: 335px;
+    height: 100%;
+    margin: 20px auto;
+  }
+
+  .banner-input-area {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 16px;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .banner h1 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-top: 32px;
+  }
+
+  .banner p {
+    font-size: 0.87rem;
+    font-weight: 400;
+    width: 304px;
+  }
 }
