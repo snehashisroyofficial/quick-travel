@@ -9,9 +9,11 @@
 :root {
   --primary-color: #ff5400;
   --base-text-size: 1rem;
+  --mobile-base-text-size: 0.87rem;
   --base-text-weight: 400;
   --base-text-color: rgba(19, 19, 24, 0.7);
   --section-title: 2.5rem;
+  --mobile-section-title-size: 1.25rem;
   --section-title-weight: 800;
   --section-title-color: #131318;
 }
@@ -29,7 +31,9 @@
 }
 
 section {
-  margin: 100px 0px;
+  padding: 0px 135px;
+  max-width: 1170px;
+  margin: 100px auto;
 }
 /* shared styles  */
 
@@ -158,12 +162,6 @@ nav ul a {
 
 /* main style area  */
 
-main {
-  padding: 0px 135px;
-  max-width: 1170px;
-  margin: 0px auto;
-}
-
 .popular-tours {
   display: flex;
   align-items: center;
@@ -192,6 +190,11 @@ ul {
 
   header {
     padding: 0px 20px;
+  }
+
+  section {
+    padding: 0px 20px;
+    margin: 24px 0px;
   }
 
   /* nav section  */
@@ -251,5 +254,31 @@ ul {
     font-size: 0.87rem;
     font-weight: 400;
     width: 304px;
+  }
+
+  /* section 1 styles  */
+  section {
+    max-width: 335px;
+  }
+
+  .popular-tours {
+    display: block;
+  }
+
+  .tour-text-area {
+    margin-bottom: 24px;
+  }
+
+  .section-title {
+    color: var(--section-title-color);
+    font-size: var(--mobile-section-title-size);
+  }
+
+  .base-text {
+    font-size: var(--mobile-base-text-size);
+  }
+  .tour-img-area img {
+    width: 100%;
+    height: 100%;
   }
 }
