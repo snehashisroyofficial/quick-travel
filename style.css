@@ -16,6 +16,8 @@
   --mobile-section-title-size: 1.25rem;
   --section-title-weight: 800;
   --section-title-color: #131318;
+  --card-title: 1.5rem;
+  --card-title-color: #131318;
 }
 
 .section-title {
@@ -30,6 +32,11 @@
   font-weight: var(--base-text-weight);
 }
 
+.card-title {
+  font-size: var(--card-title);
+  color: var(--card-title-color);
+  font-weight: var(--section-title-weight);
+}
 section {
   padding: 0px 135px;
   max-width: 1170px;
@@ -213,6 +220,104 @@ ul {
   color: #fff;
   font-weight: 800;
 }
+
+/* why choose us / section 3 */
+.heading-card-title {
+  text-align: center;
+}
+.heading-card-title p {
+  width: 643px;
+  margin: 24px auto 48px auto;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.second-card-row {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 573px;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.card h4 {
+  margin: 32px 0px 16px 0px;
+}
+
+.card1 {
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+
+.card2 {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+.card3 {
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+}
+
+/* news latter secton  */
+
+.news-latter-container {
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+}
+
+.news-latter-container h4 {
+  font-size: var(--card-title);
+  font-weight: var(--section-title-weight);
+  margin-bottom: 16px;
+}
+
+.news-latter-container p {
+  margin-bottom: 24px;
+}
+
+.news-input {
+  padding: 16px 20px;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  border-style: none;
+  outline: none;
+  margin-top: 16px;
+}
+
+.news-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-img-container {
+  max-width: 672px;
+}
+
+.news-container {
+  display: flex;
+  gap: 24px;
+}
+
+.btn-second {
+  color: #fff;
+  border-radius: 8px;
+  background: #ff5400;
+  font-size: var(--mobile-section-title-size);
+  font-weight: var(--section-title-weight);
+  margin-top: 24px;
+  border-style: none;
+  outline: none;
+  padding: 14px;
+}
 /* mobile responsive  */
 
 @media only screen and (max-width: 600px) {
@@ -323,14 +428,19 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-bottom: 0px;
-  }
-
-  .box {
     margin-bottom: 16px;
   }
+
   .row img {
     width: 335px;
     height: 176px;
+  }
+
+  /* why choose us / section 3 */
+
+  .heading-card-title p {
+    max-width: 309px;
+    margin: 0px auto;
+    text-align: center;
   }
 }
