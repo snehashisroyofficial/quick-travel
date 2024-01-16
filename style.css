@@ -284,6 +284,11 @@ ul {
   margin-bottom: 24px;
 }
 
+hr {
+  width: 393px;
+  margin-bottom: 24px;
+  background: rgba(19, 19, 24, 0.041);
+}
 .news-input {
   padding: 16px 20px;
   border-radius: 8px;
