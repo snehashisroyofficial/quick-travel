@@ -9,8 +9,28 @@
 :root {
   --primary-color: #ff5400;
   --base-text-size: 1rem;
+  --base-text-weight: 400;
+  --base-text-color: rgba(19, 19, 24, 0.7);
+  --section-title: 2.5rem;
+  --section-title-weight: 800;
+  --section-title-color: #131318;
 }
 
+.section-title {
+  font-size: var(--section-title);
+  font-weight: var(--section-title-weight);
+  color: var(--section-title-color);
+}
+
+.base-text {
+  font-size: var(--base-text-size);
+  color: var(--base-text-color);
+  font-weight: var(--base-text-weight);
+}
+
+section {
+  margin: 100px 0px;
+}
 /* shared styles  */
 
 /* header section started  */
@@ -136,9 +156,38 @@ nav ul a {
   margin-right: 8px;
 }
 
+/* main style area  */
+
+main {
+  padding: 0px 135px;
+  max-width: 1170px;
+  margin: 0px auto;
+}
+
+.popular-tours {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+}
+
+.tour-text-area h2,
+p,
+ul {
+  margin-bottom: 24px;
+}
+
+.list {
+  padding-left: 20px;
+}
+
+.tour-img-area img {
+  width: 540px;
+  height: 550px;
+}
+
 /* mobile responsive  */
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   /* header section  */
 
   header {
