@@ -288,7 +288,8 @@ nav ul a {
 }
 
 hr {
-  width: 393px;
+  max-width: 393px;
+  padding: 0px 40px;
   margin-bottom: 24px;
   background: rgba(19, 19, 24, 0.041);
 }
@@ -484,5 +485,35 @@ hr {
   }
   .card {
     width: auto;
+  }
+
+  /* news latter section  */
+
+  .news-container {
+    flex-direction: column;
+  }
+
+  hr {
+    width: auto;
+    padding: 0px 44px;
+    background: rgba(19, 19, 24, 0.1);
+  }
+
+  .news-img-container img {
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+
+  .sticky-card {
+    max-width: 214px;
+    padding: 14px 25px;
+    border-radius: 10px;
+    left: 110px;
+    bottom: 40px;
+  }
+
+  .sticky-card h3 {
+    font-size: 1.3rem;
   }
 }
