@@ -498,7 +498,9 @@ hr {
     padding: 0px 44px;
     background: rgba(19, 19, 24, 0.1);
   }
-
+  .heading-card-title p {
+    margin: 16px auto;
+  }
   .news-img-container img {
     width: 100%;
     height: 300px;
