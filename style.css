@@ -66,9 +66,12 @@ header {
   display: flex;
   align-items: center;
   color: #131318;
-  font-size: 2.25rem;
-  font-weight: 800;
   gap: 16px;
+}
+
+.nav-logo h3 {
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 .nav-title {
@@ -346,6 +349,53 @@ hr {
   font-size: 2rem;
   font-weight: var(--section-title-weight);
 }
+
+/* footer section styles  */
+footer {
+  width: 100%vw;
+  background: rgba(19, 19, 24, 0.05);
+}
+
+.footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 110px 0px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  color: #131318;
+  gap: 16px;
+  margin-bottom: 15px;
+}
+
+.footer-logo h3 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.footer-first-p {
+  color: #5a5a5d;
+  text-align: center;
+  max-width: 769px;
+  margin-bottom: 33px;
+}
+.footer-img {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.footer-hr {
+  width: 872px;
+  margin: 0px auto;
+  background: rgba(19, 19, 24, 0.1);
+  margin-bottom: 50px;
+}
+
 /* mobile responsive  */
 
 @media only screen and (max-width: 600px) {
@@ -517,5 +567,32 @@ hr {
 
   .sticky-card h3 {
     font-size: 1.3rem;
+  }
+
+  /* footer section styles  */
+  .footer-logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0px;
+  }
+
+  .footer-logo img {
+    width: auto;
+    height: 33px;
+  }
+
+  .footer-logo h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+  }
+  .footer-logo-container p {
+    max-width: 287px;
+  }
+
+  .footer-hr {
+    max-width: 335px;
+    padding: 0px 20px;
   }
 }
